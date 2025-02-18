@@ -1,11 +1,286 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Flatpak—the future of application distribution">
+  <section class="imagebanner">
+    <div class="container">
+      <div class="row largegap">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h1 class="section-heading">The future of apps on Linux</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-secondary" id="appsplash">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-1">
+          <h3>
+            Start using Flatpak and install from a growing collection of apps
+          </h3>
+          <div class="appgrid">
+            <div
+              class="icon featured"
+              style="background-image: url(https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.telegram.desktop.png)"
+            >
+            </div>
+            <div
+              class="icon featured"
+              style="background-image: url(https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.slack.Slack.png)"
+            >
+            </div>
+            <div
+              class="icon featured"
+              style="background-image: url(https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.inkscape.Inkscape.png)"
+            >
+            </div>
+            <div
+              class="icon featured"
+              style="background-image: url(https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.spotify.Client.png)"
+            >
+            </div>
+            <div
+              class="icon featured"
+              style="background-image: url(https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/com.valvesoftware.Steam.png)"
+            >
+            </div>
+            <div
+              class="icon featured"
+              style="background-image: url(https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.gimp.GIMP.png)"
+            >
+            </div>
+            <div
+              class="icon featured"
+              style="background-image: url(https://dl.flathub.org/repo/appstream/x86_64/icons/128x128/org.mozilla.firefox.png)"
+            >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-sm-offset-1 centered">
+          <a
+            class="btn-default btn btn-xl page-scroll"
+            href="/setup"
+            id="quicksetupbtn">Get set up</a
+          >
+          <p class="small mediumgap">
+            Already set up? Head over to
+            <a href="https://flathub.org">Flathub</a>
+            to install apps.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-primary-neutral">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-sm-10 col-sm-offset-1">
+          <iframe
+            allowfullscreen="true"
+            class="full"
+            frameborder="0"
+            src="https://www.youtube.com/embed/jDVCITRWGgs"
+            width="100%"
+          >
+            <a href="https://youtu.be/jDVCITRWGgs">Flatpak 1.0</a>
+          </iframe>
+        </div>
+      </div>
+      <div class="row centered">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2>A new world for application developers</h2>
+          <p>
+            Flatpak changes app distribution for the better. Advantages include:
+          </p>
+        </div>
+      </div>
+      <div class="row largegap">
+        <div class="col-sm-5 col-sm-offset-1">
+          <h4>Build for every distro</h4>
+          <p>
+            Create one app and distribute it to the entire Linux desktop market.
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <h4>Stable platforms</h4>
+          <p>
+            Runtimes provide platforms of common libraries that you can depend
+            on.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 col-sm-offset-1">
+          <h4>Consistent environments</h4>
+          <p>
+            Develop and test your application in an environment that’s identical
+            to the one users have.
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <h4>Full control over dependencies</h4>
+          <p>
+            Flatpak makes it easy to bundle your own libraries as part of your
+            app.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 col-sm-offset-1">
+          <h4>Easy build tools</h4>
+          <p>
+            Flatpak’s build tools are simple and easy to use, and come with a
+            <a href="https://docs.flatpak.org/">full set of documentation.</a>
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <h4>Future-proof builds</h4>
+          <p>
+            Flatpak apps continue to be compatible with new versions of Linux
+            distributions.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 col-sm-offset-1">
+          <h4>Distribution made easy</h4>
+          <p>
+            Make your app available to a rapidly growing audience of Flatpak
+            users, with
+            <a href="https://flathub.org/">Flathub.</a>
+          </p>
+        </div>
+        <div class="col-sm-5">
+          <h4>An independent project</h4>
+          <p>
+            Flatpak is developed by an independent community, with no lock-in to
+            a single vendor.
+          </p>
+        </div>
+      </div>
+      <div class="row largegap">
+        <div class="col-sm-6 col-sm-offset-4">
+          <a
+            class="btn btn-default btn-xl page-scroll"
+            href="https://docs.flatpak.org/en/latest/getting-started.html"
+            >5 minute tutorial</a
+          >
+          <a
+            class="btn btn-primary btn-xl page-scroll"
+            href="https://docs.flatpak.org/en/latest/">Developer guide</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-secondary" id="devsplash">
+    <div class="container">
+      <div class="row largegap">
+        <div class="col-sm-5 col-sm-offset-1">
+          <h3>Flatpak can be used with a total of 41 distros</h3>
+          <p>
+            See the
+            <a href="/setup">complete list.</a>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <div class="distrogrid">
+            <div
+              class="icon"
+              style="background-image: url(/img/distro/ubuntu.svg)"
+            >
+            </div>
+            <div
+              class="icon"
+              style="background-image: url(/img/distro/fedora.svg)"
+            >
+            </div>
+            <div
+              class="icon"
+              style="background-image: url(/img/distro/manjaro.svg)"
+            >
+            </div>
+            <div
+              class="icon"
+              style="background-image: url(/img/distro/endless.svg)"
+            >
+            </div>
+            <div
+              class="icon"
+              style="background-image: url(/img/distro/altlinux.svg)"
+            >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-primary">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2>What people are saying about Flatpak</h2>
+        </div>
+      </div>
+      <div class="row largegap">
+        <div class="col-sm-5 col-sm-offset-1">
+          <blockquote>
+            <p>
+              Bringing Flatpak technology into Debian enables us to run
+              applications in a predictable environment with their most suitable
+              library stack, without compromising the base OS's stability and
+              flexibility.
+            </p>
+            <div class="author">
+              <em>Simon McVittie</em>
+              <div class="title">Senior Software Engineer, Collabora</div>
+            </div>
+          </blockquote>
+        </div>
+        <div class="col-sm-5">
+          <blockquote>
+            <p>
+              At Endless, we’re proud to be a part of this movement and have
+              fully embraced Flatpak by readily converting all of our
+              applications for our upcoming release and continuing to build new
+              Flatpak apps.
+            </p>
+            <div class="author">
+              <em>Jonathan Blandford</em>
+              <div class="title">VP of Software Engineering, Endless</div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 col-sm-offset-1">
+          <blockquote>
+            <p>
+              The Fedora Workstation team are very excited about Flatpak and the
+              prospects it brings for making the Linux desktop easier to develop
+              for. We plan to continue supporting this effort going forward.
+            </p>
+            <div class="author">
+              <em>Christian F.K. Schaller</em>
+              <div class="title">Senior Manager, Red Hat</div>
+            </div>
+          </blockquote>
+        </div>
+        <div class="col-sm-5">
+          <blockquote>
+            <p>
+              Flatpak will enable us (as a Linux ISV) to distribute a better
+              LibreOffice, with up-to-date dependencies and a platform that can
+              run on many systems. I’m excited to see that happen.
+            </p>
+            <div class="author">
+              <em>Michael Meeks</em>
+              <div class="title">Director, The Document Foundation</div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
