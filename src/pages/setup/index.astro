@@ -1,0 +1,15 @@
+---
+import { fetchSetupInstructions } from "../../components/setup/distro-setup";
+import Layout from "../../layouts/Layout.astro";
+import Setup from "../../components/setup/Setup";
+
+import "./src/styles/global.css";
+
+const instructions = await fetchSetupInstructions();
+---
+
+<Layout title="Setup">
+  <div style="padding-top: 50px;">
+    <Setup instructions={instructions} client:load />
+  </div>
+</Layout>
