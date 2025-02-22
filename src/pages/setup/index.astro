@@ -1,9 +1,9 @@
 ---
+import Setup from "@/components/setup/Setup";
 import { fetchSetupInstructions } from "../../components/setup/distro-setup";
 import Layout from "../../layouts/Layout.astro";
-import Setup from "../../components/setup/Setup";
 
-import "./src/styles/global.css";
+import "@/styles/global.css";
 
 const instructions = await fetchSetupInstructions();
 ---
