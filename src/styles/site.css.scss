@@ -234,15 +234,16 @@ section {
 
 .imagebanner {
   background: url(/img/container.webp) no-repeat center bottom;
-  @media (prefers-color-scheme: dark) {
-    filter: brightness(70%);
-  }
   background-size: cover;
   color: #fff;
   min-height: 50vh;
   z-index: 1;
   font-weight: 600;
   font-variation-settings: 'wght' 600;
+
+  @media (prefers-color-scheme: dark) {
+    filter: brightness(70%);
+  }
   p {
     max-width: 30em;
     margin: auto;
